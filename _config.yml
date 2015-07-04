@@ -17,7 +17,7 @@ conf:
 navbar:
   links:
     -
-      title: Home
+      title: AboutMe
       url: /
     - 
       title: Slides
