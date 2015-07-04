@@ -49,6 +49,9 @@
     .footer-follow-me .footer-item-body p {
     	max-width: 64px;
     }
+    .footer {
+    	position: inherit;
+    }
 }
 @media (min-width: 992px) {
 	.avatar {
