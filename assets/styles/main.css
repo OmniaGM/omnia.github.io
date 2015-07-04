@@ -20,7 +20,7 @@
 }
 @media (min-width: 300px) and (max-width:390px){
 	.content {
-		padding-bottom: 90%;
+		padding-bottom: 90% !important;
 	}
 }
 @media (min-width: 300px) and (max-width:665px){
