@@ -23,6 +23,11 @@
 		padding-bottom: 90% !important;
 	}
 }
+@media (min-height: 676) {
+	.footer {
+		bottom: 0px;
+	}
+}
 @media (min-width: 300px) and (max-width:665px){
 	.post-info .pull-left {
 		float: none !important;
