@@ -17,6 +17,9 @@
 		width: 50%;
 		margin-left: 25%;
 	}
+	.footer {
+		bottom: initial;
+	}
 }
 @media (min-width: 300px) and (max-width:390px){
 	.content {
