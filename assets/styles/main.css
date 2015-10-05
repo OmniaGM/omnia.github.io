@@ -18,7 +18,7 @@
 		margin-left: 25%;
 	}
 	.footer {
-		position: initial;
+		position: initial !important;
 	}
 }
 @media (min-width: 300px) and (max-width:390px){
