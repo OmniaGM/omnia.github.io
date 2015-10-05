@@ -150,6 +150,14 @@
 .white-text {
 	color: #fff;
 }
+a.unstyle-link:hover, a.unstyle-link:active, a.unstyle-link:focus {
+    color: inherit !important;
+    text-decoration: none;
+}
+a.unstyle-link {
+    color: inherit;
+}
+
 /*Overrid Bootstrab*/
 .nav-tabs {
 	border-bottom: none; 
