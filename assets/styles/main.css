@@ -17,6 +17,8 @@
 		width: 50%;
 		margin-left: 25%;
 	}
+}
+@media (min-width:391px) and (max-width:925px){
 	.footer {
 		position: initial !important;
 	}
@@ -26,7 +28,7 @@
 		padding-bottom: 90% !important;
 	}
 }
-@media (min-height: 676px) {
+@media (min-height: 800px) and (min-width: 724px){
 	.footer {
 		bottom: 0px;
 	}
@@ -35,7 +37,7 @@
 	.post-info .pull-left {
 		float: none !important;
 	}
-    .post-cover, .avatar {
+  .post-cover, .avatar {
 		width: 200px;
 		height: 200px;
 	}
@@ -52,7 +54,7 @@
 
 }
 @media (min-width: 400px) and (max-width: 992px) {
-	.footer-copyright .footer-item-body p{	
+	.footer-copyright .footer-item-body p{
 		max-width: 120px;
     }
 }
@@ -61,7 +63,7 @@
     .footer-follow-me .footer-item-body p {
     	max-width: 64px;
     }
-    
+
 }
 @media (min-width: 992px) {
 	.avatar {
@@ -78,13 +80,13 @@
 @media (min-height: 600px) {
 	.about-me {
 		padding-top: 40px;
-		
+
 	}
 }
 @media (min-height: 800px) and (max-height: 900px) {
 	.about-me {
 		padding-top: 80px;
-		
+
 	}
 	.avatar {
 		width: 400px;
@@ -163,7 +165,7 @@ a.unstyle-link {
 
 /*Overrid Bootstrab*/
 .nav-tabs {
-	border-bottom: none; 
+	border-bottom: none;
 }
 .nav-tabs > li > a  {
 	border: none;
