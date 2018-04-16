@@ -28,3 +28,5 @@ navbar:
       
 pygments: true
 permalink: none
+
+theme: jekyll-theme-hacker
