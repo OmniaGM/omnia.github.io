@@ -4,19 +4,16 @@ title: Fake AWS Services
 date: 2018-04-01T14:37:44.000Z
 categories: update
 ---
-AWS provide us with too many useful services, some of them are managed service for existing middleware such as Memcached, Redis but some of them are AWS specific services like DynamoDB, Lambda, ...
-So if you are using one of AWS Specific services then the main headach you will face is usually how to get a local development environment.
+AWS provides us with too many useful services, some of them are managed service for existing middleware such as Memcached, Redis but some of them are AWS specific services like DynamoDB, Lambda, … So if you are using one of AWS Specific services then the main headache you will face is usually how to get a local development environment.
 
 ## How can we mock AWS
 
-Sometime we need to fake AWS services on local environment or our CI for test purposes, for example package lambda code for testing before deploy the code to the real lambda, in order to do that there are few options.
+Sometimes we need to fake AWS services on local environment or our CI for test purposes, for example, package lambda code for testing before deploying the code to the real lambda, in order to do that there are few options.
 
-### 1- Find the right tool for each services
+### 1- Find the right tool for each service
 <img src="/images/fulls/fake-aws-1.png" class="left image">
 
-You can always search for the right open-source project that  emulate AWS specific services like,
-
-**The problem** with that is if your system contains alot of these services, then you need to maintain and setup all of these services which could be hard.
+You can always search for the right open-source project that emulates AWS specific services like, **The problem** with that is if your system contains a lot of these services, then you need to maintain and set up all of these services which could be hard.
 
 ### 2- Use tool gives you multiple services
 
@@ -32,11 +29,11 @@ You can always search for the right open-source project that  emulate AWS specif
 <img src="/images/fulls/localstack.png"  class="left image">
 
 - Meet [LocalStack](https://localstack.cloud/) is a fully functional local AWS cloud stack.
-    - Supported a lot of AWS services like, API Gateway, Kinesis, DynamoDB, Elasticsearch, S3, Lambda, ...
+    - Supported a lot of AWS services like API Gateway, Kinesis, DynamoDB, Elasticsearch, S3, Lambda, ...
     - Builds on existing best-of-breed mocking/testing tools
     - Bigger community.
     - Easy to setup, “just run on docker” _[initialised-localstack img](https://github.com/markglh/initialised-localstack)_.
-    - Easy to use, “just override AWS endpoint url for each service”.
+    - Easy to use, “just override AWS endpoint URL for each service”.
 
 ```bash
 aws --endpoint-url=http://localhost:4569 dynamodb list-tables
@@ -50,8 +47,9 @@ Also, it has a dashboard
 
 <img src="/images/fulls/localstackdb.png"  class="fit image">
 
-Localstack is really useful tool, however it has **limitation**, like
+
+Localstack is a really useful tool, however, it has some **limitation**, like
 - Some of the services support only us-east-1 region.
-- It assume that all services have Admin IAM role and policy.
+- It assumes that all services have Admin IAM role and policy.
 
 I highly recommend you to try LocalStack if you are developing AWS based applications.
