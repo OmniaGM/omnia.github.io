@@ -7,7 +7,7 @@ categories: update
 AWS provide us with too many useful services, some of them are managed service for existing middleware such as Memcached, Redis but some of them are AWS specific services like DynamoDB, Lambda, ...
 So if you are using one of AWS Specific services then the main headach you will face is usually how to get a local development environment.
 
-## How we can fake AWS
+## How can we mock AWS
 
 Sometime we need to fake AWS services on local environment or our CI for test purposes, for example package lambda code for testing before deploy the code to the real lambda, in order to do that there are few options.
 
@@ -17,7 +17,6 @@ Sometime we need to fake AWS services on local environment or our CI for test pu
 You can always search for the right open-source project that  emulate AWS specific services like,
 
 **The problem** with that is if your system contains alot of these services, then you need to maintain and setup all of these services which could be hard.
-
 
 ### 2- Use tool gives you multiple services
 
