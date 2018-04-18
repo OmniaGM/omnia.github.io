@@ -13,7 +13,9 @@ Sometimes we need to fake AWS services on local environment or our CI for test p
 ### 1- Find the right tool for each service
 <img src="/images/fulls/fake-aws-1.png" class="left image">
 
-You can always search for the right open-source project that emulates AWS specific services like, **The problem** with that is if your system contains a lot of these services, then you need to maintain and set up all of these services which could be hard.
+You can always search for the right open-source project that emulates AWS specific services like, [local-dynamodb](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html) or [docker-lambda](https://github.com/lambci/docker-lambda).
+
+**The problem** with that is if your system contains a lot of these services, then you need to maintain and set up all of these services which could be hard.
 
 ### 2- Use tool gives you multiple services
 
