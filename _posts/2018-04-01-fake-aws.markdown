@@ -6,10 +6,22 @@ categories: update
 ---
 AWS provides us with too many useful services, some of them are managed service for existing middleware such as Memcached, Redis but some of them are AWS specific services like DynamoDB, Lambda, … So if you are using one of AWS Specific services then the main headache you will face is usually how to get a local development environment.
 
+## When do we need to mock AWS
+
+Sometimes we need to fake AWS services in the local environment instead of wasting money and resources on deploy stuff to the real AWS for each developer in the team or wasting money on running a test on CI. 
+
+So I found mocking AWS services is really **good** for situations like:
+- Local development environment.
+- Unit/Functional test.
+- Debugging (special for debugging lambda).
+
+on the other hand, it's **not good** for,
+- End-to-End test.
+- Infrastructure test.
+
 ## How can we mock AWS
 
-Sometimes we need to fake AWS services on local environment or our CI for test purposes, for example, package lambda code for testing before deploying the code to the real lambda, in order to do that there are few options.
-
+Last few months I and my team were looking to how to run a test without costing money, and we found few approaches to achieve this,
 ### 1- Find the right tool for each service
 <img src="/images/fulls/fake-aws-1.png" class="left image">
 
@@ -29,8 +41,8 @@ You can always search for the right open-source project that emulates AWS specif
 
 <img src="/images/fulls/localstack.png"  class="left image">
 
-- Meet [LocalStack](https://localstack.cloud/) is a fully functional local AWS cloud stack.
-    - Supported a lot of AWS services like API Gateway, Kinesis, DynamoDB, Elasticsearch, S3, Lambda, ...
+- Meet [LocalStack](https://localstack.cloud/), it is a fully functional local AWS cloud stack.
+    - Support a lot of AWS services like API Gateway, Kinesis, DynamoDB, Elasticsearch, S3, Lambda, ...
     - Builds on existing best-of-breed mocking/testing tools
     - Bigger community.
     - Easy to setup, “just run on docker” _[initialised-localstack img](https://github.com/markglh/initialised-localstack)_.
