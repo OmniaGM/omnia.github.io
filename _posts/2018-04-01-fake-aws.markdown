@@ -28,11 +28,11 @@ Last few months I and my team were looking to how to run a test without costing 
 You can always search for the right open-source project that emulates AWS specific services like, [local-dynamodb](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html) or [docker-lambda](https://github.com/lambci/docker-lambda).
 **The problem** with that is if your system contains a lot of these services, then you need to maintain and set up all of these services which could be hard.
 
-### 2- Use tool gives you multiple services
+### 2- Use tool gives you multiple services like,
 
 <img src="/images/fulls/sam-local-banner.png"  class="right image">
 
--  [SAM](https://github.com/awslabs/aws-sam-local) is a CLI tool for local development and testing of Serverless applications.
+-  [SAM](https://github.com/awslabs/aws-sam-local), which is a CLI tool for local development and testing of Serverless applications.
     - Develop by AWS
     - Still new tool, no big community yet.
     - Need cloudformation configuration.
@@ -41,7 +41,7 @@ You can always search for the right open-source project that emulates AWS specif
 
 <img src="/images/fulls/localstack.png"  class="left image">
 
-- Meet [LocalStack](https://localstack.cloud/), it is a fully functional local AWS cloud stack.
+- [LocalStack](https://localstack.cloud/), it is a fully functional local AWS cloud stack.
     - Support a lot of AWS services like API Gateway, Kinesis, DynamoDB, Elasticsearch, S3, Lambda, ...
     - Builds on existing best-of-breed mocking/testing tools
     - Bigger community.
