@@ -64,6 +64,6 @@ Localstack is a really useful tool, however, it has some **limitation**, like
 - Some of the services support only us-east-1 region.
 - It assumes that all services have Admin IAM role and policy.
 
-Which sometimes makes it tricky to re-use and re-run the same infrastructure scripts you have on-place for the real services, but to be fair this didn't bother me that much when I use it.
+Which sometimes makes it tricky to re-use and re-run the same infrastructure scripts you have on-place for the real services to setup Localstack, but to be fair this didn't bother me that much when I use it.
 
 I highly recommend you to try LocalStack if you are developing AWS based applications.
