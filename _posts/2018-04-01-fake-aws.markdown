@@ -66,4 +66,4 @@ Localstack is a really useful tool, however, it has some **limitation**, like
 
 Which sometimes makes it tricky to re-use and re-run the same infrastructure scripts you have on-place for the real services to setup Localstack, but to be fair this didn't bother me that much when I use it.
 
-I highly recommend you to try LocalStack if you are developing AWS based applications.
+I highly recommend you to try LocalStack if you are developing AWS based applications, especially if you wanna to use same mocking tool to mock AWS services anywhere you have it in your solution then go with LocalStack. On the other hand, if you have only Serverless application then go with SAM.
