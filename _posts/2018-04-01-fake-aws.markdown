@@ -21,7 +21,7 @@ on the other hand, it's **not good** for,
 
 ## How can we mock AWS
 
-Last few months I and my team were looking to how to run a test without costing money, and we found few approaches to achieve this,
+Last few months my team and I were looking to how to run a test without costing money, and we found few approaches to achieve this,
 ### 1- Find the right tool for each service
 <img src="/images/fulls/fake-aws-1.png" class="left image">
 
