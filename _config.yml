@@ -2,7 +2,10 @@ locale: "en-US"
 title: Omnia Helmi # Title of your site
 url: "http://omniagm.github.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
-google_analytics_key: ""
+google_analytics_key: "UA-118490401-1"
+google:
+  tag_manager:
+    container_id: GTM-T72L6F2
 
 # Default description in social shares for the jekyll-seo-tag gem
 description: > # this means to ignore newlines until "baseurl:"
