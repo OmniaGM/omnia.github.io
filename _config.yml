@@ -1,5 +1,5 @@
 locale: "en-US"
-title: Omnia H Ibrahim # Title of your site
+title: Omnia H. Ibrahim # Title of your site
 url: "http://omniagm.github.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 google_analytics_key: "UA-118490401-1"
@@ -12,8 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Software Engineer, Geek and Open Source Contributor.
 # Author details for the jekyll-seo-tag gem
 author:
-  name: Omnia G.Helmi
-  email: omnia.gamal1988@gmail.com
+  name: Omnia H. Ibrahim
+  email: o.g.h.ibrahim@gmail.com
   twitter: omnia_G
 
 # Social details for the jekyll-seo-tag gem
